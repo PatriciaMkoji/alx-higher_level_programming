@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print(open("ZEN", "r").read())
+fileopen = open("ZEN", "r")
+print(fileopen.read())

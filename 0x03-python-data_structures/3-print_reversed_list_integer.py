@@ -4,7 +4,6 @@
 """3. Print a list of integers... in reverse"""
 def print_reversed_list_integer(my_list = []):
 
-"""functiion print_reversed_list_integer that executes"""
     reversed_list = my_list[::-1]
     for y in reversed_list:
         print("{}".format(y))

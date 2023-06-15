@@ -1,4 +1,1 @@
-0x17. C - Doubly linked lists
-C
-Algorithm
-Data structure
+0x00. Python - Hello, World

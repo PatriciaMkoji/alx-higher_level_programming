@@ -10,3 +10,6 @@ def safe_print_integer_err(value):
     except ValueError as e:
         print("Exception: {}".format(str(e)), file=sys.stderr)
         return False
+    except TypeError as e:
+        print("Exception: {}".format(str(e)), file=sys.stderr)
+        return False

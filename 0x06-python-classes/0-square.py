@@ -3,5 +3,5 @@
 This module is defining the square class
 """
 class Square:
-     """ Respresents a class """
-     pass
+    """ Respresents a class """
+    pass

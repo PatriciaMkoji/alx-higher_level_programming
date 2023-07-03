@@ -9,7 +9,6 @@ class Rectangle:
     """
     A class rectangle
     """
-
     number_of_instances = 0
     print_symbol = "#"
 
@@ -53,7 +52,6 @@ class Rectangle:
 
     def perimeter(self):
         """ Calculates the perimeter of the rectangle. """
-
         if self.__width == 0 or self.__height == 0:
             return 0
         else:
@@ -64,13 +62,16 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         else:
-            return '\n'.join([str(self.print_symbol) * self.__width] * self.__height)
+            return '\n'.join(
+                    [str(self.print_symbol) * self.__width] * self.__height
+                    )
 
-    def __repr__(self):
-        """ Returns a string representation of the rectangle. """
+            def __repr__(self):
+                """ Returns a string representation of the rectangle. """
         return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
         """ Prints a message when an instance of Rectangle is deleted. """
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+

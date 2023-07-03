@@ -18,10 +18,12 @@ class Rectangle:
 
     @property
     def width(self):
+        """ Get width of rectangle"""
         return self._width
 
     @width.setter
     def width(self, value):
+        """ set width ogf rectangle"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -30,10 +32,12 @@ class Rectangle:
 
     @property
     def height(self):
+        """ get height of triangle """
         return self._height
 
     @height.setter
     def height(self, value):
+        """ set the height of triangle """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:

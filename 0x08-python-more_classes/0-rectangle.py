@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 """
-A Rectangle module
+Square module
 """
 
 
 class Rectangle:
+    """
+    Square class
+    """
     pass

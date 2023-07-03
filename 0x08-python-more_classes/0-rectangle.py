@@ -2,5 +2,7 @@
 """
 A Rectangle module
 """
+
+
 class Rectangle:
     pass

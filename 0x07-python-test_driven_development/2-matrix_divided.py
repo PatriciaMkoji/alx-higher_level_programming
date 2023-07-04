@@ -38,4 +38,3 @@ def matrix_divided(matrix, div):
     new_matrix = [[round(element / div, 2) for element in row] for row in matrix]
 
     return new_matrix
-

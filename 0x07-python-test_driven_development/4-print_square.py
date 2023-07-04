@@ -1,5 +1,18 @@
 #!/usr/bin/python3
 def print_square(size):
+    """
+    Print a square of a given size using '#' characters.
+
+    Args:
+        size (int): The size of the square.
+
+    Raises:
+        TypeError: If size is not an integer.
+        ValueError: If size is less than 0.
+
+    Returns:
+        None
+    """
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:

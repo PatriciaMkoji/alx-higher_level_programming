@@ -26,7 +26,7 @@ Traceback (most recent call back):
 ...
 TypeError: last_name must be a string
 
->>> say_my_name([])
+>>> say_my_name(None)
 Traceback (most recent call back):
 ...
 TypeError: first_name must be a string

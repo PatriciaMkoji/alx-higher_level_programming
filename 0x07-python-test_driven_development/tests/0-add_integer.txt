@@ -29,8 +29,6 @@ TESTS
 10
 >>> add_integer(10.5, 100.457)
 110
->>> add_intger(10, 100.457)
-110
 >>> add_integer(-10.5, 100)
 90
 
@@ -40,28 +38,12 @@ TypeError: a must be an integer
 
 >>> add_integer(10, None)
 Traceback (most recent call last):
-TypeError: b must be integer
+TypeError: b must be an integer
 
 >>> add_integer(10, "hi")
 Traceback (most recent call last):
 TypeError: b must be an integer
 
->>> add_integer(hi, 100)
+>>> add_integer("hi", 100)
 Traceback (most recent call last):
-TypeError: a is not an integer
-
->>> add_integer()
-Traceback (most recent call last):
-TypeError: add_integers() missing 2 required positional arguments: 'a' and 'b'
-
->>> add_integer(hi)
-Traceback (most recent call last):
-TypeError: ais not an integer
-
->>> add_integer(*, 100)
-Traceback (most recent call last):
-TypeError: a is not an integer
-
->>> add_integer([10], 100)
-Traceback: (most recent call last):
-TypeError: can only convanate list (not "int") to list
+TypeError: a must be an integer

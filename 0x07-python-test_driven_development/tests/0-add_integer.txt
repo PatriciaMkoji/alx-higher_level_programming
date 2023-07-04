@@ -1,0 +1,67 @@
+====================================
+TEST File for file 0-add_integer.py
+====================================
+The module 0-add_integer.py is a function that adds two integers.
+Below we exhaust all possible test cases
+
+============================
+Import function 'add_integer'
+=============================
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+=============
+TESTS
+=============
+
+>>> add_integer(10, 100)
+110
+>>> add_integer(-10, 100)
+90
+>>> add_integer(10, -100)
+-90
+>>> add_integer(10)
+108
+>>> add_integer(0, 100)
+100
+>>> add_integer(10, 0)
+10
+>>> add_integer(10.5, 100.457)
+110
+>>> add_intger(10, 100.457)
+110
+>>> add_integer(-10.5, 100)
+90
+
+>>> add_integer(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(10, None)
+Traceback (most recent call last):
+TypeError: b must be integer
+
+>>> add_integer(10, "hi")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer(hi, 100)
+Traceback (most recent call last):
+TypeError: a is not an integer
+
+>>> add_integer()
+Traceback (most recent call last):
+TypeError: add_integers() missing 2 required positional arguments: 'a' and 'b'
+
+>>> add_integer(hi)
+Traceback (most recent call last):
+TypeError: ais not an integer
+
+>>> add_integer(*, 100)
+Traceback (most recent call last):
+TypeError: a is not an integer
+
+>>> add_integer([10], 100)
+Traceback: (most recent call last):
+TypeError: can only convanate list (not "int") to list

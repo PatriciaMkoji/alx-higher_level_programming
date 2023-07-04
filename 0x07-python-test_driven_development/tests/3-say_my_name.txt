@@ -1,0 +1,37 @@
+================================
+Tests for function 'say_my_name'
+================================
+
+Tests edge cases for the function 'say_my_name' which prints the 1st and 2nd name
+
+
+========
+Import
+========
+
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+========
+TESTS
+========
+
+>>> say_my_name("Patricia", "Mkoji")
+My name is Patricia Mkoji
+
+>>> say_my_name("Josh")
+My name is Josh
+
+>>> say_my_name("Patricia",5)
+Traceback (most recent call back):
+...
+TypeError: last_name must be a string
+
+>>> say_my_name(*)
+Traceback (most recent call back):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name(Patricia)
+Traceback (most recent call back):
+...
+TypeError: first_name must be a string

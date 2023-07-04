@@ -1,9 +1,25 @@
 #!/usr/bin/python3
+
 def text_indentation(text):
+    """
+    the func prints a text with 2 new lines after each of these characters: ., ? and :
+
+    Args:
+        text (str): input text.
+
+    Raises:
+        TypeError: when text is not a string.
+
+    """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
+
+    new_text = ""
     for char in text:
-        text_indent += char
-        if char == '.'or char == '?' or char == ':':
-            text_indent += "\n\n"
-        print("\n{}".format(text))
+        new_text += char
+        if char in ['.', '?', ':']:
+            new_text += "\n\n"
+
+    lines = new_text.split("\n")
+    for line in lines:
+        print(line.strip())

@@ -1,0 +1,37 @@
+Test for 'text_indentation' function
+=================================
+
+A test file that tests cases for the text_indentation function.
+
+======
+Import
+======
+
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+
+=====
+Tests
+=====
+
+>>> text_indentation("Lorem ipsum dolor. Sit amet? Consectetur: Adipiscing elit.")
+Lorem ipsum dolor
+
+Sit amet
+
+Consectetur
+
+Adipiscing elit
+
+>>> text_indentation("Hello.World?How:Are you?")
+Hello
+World
+How
+Are you
+
+>>> text_indentation("No special characters in this text")
+No special characters in this text
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string

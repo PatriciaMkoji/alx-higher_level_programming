@@ -26,12 +26,7 @@ Traceback (most recent call back):
 ...
 TypeError: last_name must be a string
 
->>> say_my_name(*)
-Traceback (most recent call back):
-...
-TypeError: first_name must be a string
-
->>> say_my_name(Patricia)
+>>> say_my_name([])
 Traceback (most recent call back):
 ...
 TypeError: first_name must be a string

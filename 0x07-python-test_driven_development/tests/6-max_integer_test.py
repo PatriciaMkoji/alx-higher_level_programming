@@ -14,19 +14,19 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_empty_list(self):
         """
-        it tests the max_int with an empty list
+        it tests the max_integer with an empty list
         """
         self.assertIsNone(max_integer([]))
 
     def test_single_element(self):
         """
-        it tests the max_int with a list containing a single element
+        it tests the max_integer with a list containing a single element
         """
         self.assertEqual(max_integer([5]), 5)
 
     def test_positive_numbers(self):
         """
-        it tests max_int with a list of +ve numbers
+        it tests max_integer with a list of +ve numbers
         """
         self.assertEqual(max_integer([1, 2, 3, 4, 5]), 5)
         self.assertEqual(max_integer([10, 20, 30, 40, 50]), 50)
@@ -34,7 +34,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_negative_numbers(self):
         """
-        it test max_int with a list of -ve numbers
+        it test max_integer with a list of -ve numbers
         """
         self.assertEqual(max_integer([-1, -2, -3, -4, -5]), -1)
         self.assertEqual(max_integer([-10, -20, -30, -40, -50]), -10)
@@ -42,7 +42,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_mixed_numbers(self):
         """
-        it tests max_int with a list of mixed +ve and -ve numbers
+        it tests max_integer with a list of mixed +ve and -ve numbers
         """
         self.assertEqual(max_integer([-5, 0, 5, -10, 10]), 10)
         self.assertEqual(max_integer([-100, 0, 100, -200, 200]), 200)

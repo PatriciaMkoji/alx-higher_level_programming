@@ -9,14 +9,14 @@
     Returns:
         sum of a and b typecasted to int
     Raises:
-        TypeError: If a or b is not an integer or float.
+        TypeError: If a or b is not an integer or float or NaN.
 """
 
 
 def add_integer(a, b=98):
     if not isinstance(a, (int, float)) or a != a:
         raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float))b != b:
+    if not isinstance(b, (int, float)) or b != b:
         raise TypeError("b must be an integer")
     a = int(a)
     b = int(b)

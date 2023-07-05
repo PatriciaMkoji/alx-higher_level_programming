@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def say_my_name(first_name, last_name=""):
     """
-    module prints a person's name
+    prints a person's name <first_name> <last_name>
 
     Args:
     first_name (str): 1st name of the person.

@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+module contains the 'say_my_name' function for printing a person's name
+"""
+
+
 def say_my_name(first_name, last_name=""):
     """
     prints a person's name <first_name> <last_name>

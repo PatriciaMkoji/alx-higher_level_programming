@@ -9,7 +9,7 @@ Tests edge cases for the function 'say_my_name' which prints the 1st and 2nd nam
 Import
 ========
 
->>> say_my_name = __import__("3-say_my_name").say_my_name
+	>>> say_my_name = __import__("3-say_my_name").say_my_name
 
 ========
 TESTS

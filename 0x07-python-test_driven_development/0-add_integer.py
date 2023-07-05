@@ -9,7 +9,7 @@
     Returns:
         sum of a and b typecasted to int
     Raises:
-        TypeError: If a or b is not an integer or float 
+        TypeError: If a or b is not an integer or float
 """
 
 

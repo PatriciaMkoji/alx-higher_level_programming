@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+class doc
+"""
+
+
 class MyList(list):
     """
     a subclass that inherits from list

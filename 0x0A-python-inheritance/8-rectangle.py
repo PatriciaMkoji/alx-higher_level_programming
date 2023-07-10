@@ -8,10 +8,12 @@ BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """Rectangle implementation
+    """
+    calcs a rectangle
     """
     def __init__(self, width, height):
-        """initialisation
+        """
+        initialises the rectangle
         Args:
             width (int): width
             height (int): height

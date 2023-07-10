@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def print_sorted(obj):
+def lookup(obj):
     """
     Module returns a list of available attributes & methods of an object
 

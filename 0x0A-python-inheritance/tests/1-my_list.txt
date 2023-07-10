@@ -1,0 +1,21 @@
+------------------------
+Test for module 'my-list'
+-------------------------
+
+a testfile to test function my_list if it is sorting right
+
+
+------
+Import
+------
+	>>> MyList = __import__('1-my_list').MyLlist
+
+-----
+TEST
+-----
+
+>>> type(my_list) === MyList
+True
+
+>>> type(my_list) == list
+False

@@ -6,7 +6,7 @@ module doc
 
 class BaseGeometry:
     """
-    A class that gives basegeometry
+    A class that gives the basegeometry
     """
 
     def area(self):

@@ -2,24 +2,22 @@
 """
 Module doc
 """
+import json
+import os.path
+import sys
 from sys import argv
-from os import path
+
+
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
+filename = "add_item.json"
+json_list = []
 
-def add_items():
-    """
-    Adds com`md-line args to a Python list& saves them to a file in JSON format.
-    """
-    filename = "add_item.json"
-    if path.isfile(filename):
-        final_list = load_from_json_file(filename)
-    else:
-        final_list = []
-    for i in range(1, len(argv)):
-        final_list.append(argv[i])
-    save_to_json_file(final_list, filename)
+if os.path.exists(filename):
+    json_list = load_from_json_file(filename)
 
+for idx in argv[1:]:
+    json_list.append(idx)
 
-add_items()
+save_to_json_file(json_list, filename)

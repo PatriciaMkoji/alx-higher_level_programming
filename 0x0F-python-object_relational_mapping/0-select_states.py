@@ -1,18 +1,10 @@
 #!/usr/bin/python3
-"""get all statea from hbtn"""
-
-import MySQLdb
-import sys
-
-if __name__ == "__main__":
-    db = MySQLdb.connect(host="localhost",
-                         port=3306,
-                         user=sys.argv[2],
-                         passwd=sys.argv[1],
-                         db=sys.argv[3])
-    cur = db.cursor()
-    cur.execute("SELECT id, name FROM states ORDER BY states.id ASC;")
-    for row in cur.fetchall():
-        print(row)
-        cur.close()
-        db.close()
+""" get all states from hbtn """
+CREATE DATABASE IF NOT EXISTS hbtn_0e_0_usa;
+USE hbtn_0e_0_usa;
+CREATE TABLE IF NOT EXISTS states (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(256) NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");

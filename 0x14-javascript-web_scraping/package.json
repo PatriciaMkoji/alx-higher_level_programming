@@ -1,0 +1,15 @@
+{
+  "name": "star-wars-movie-title",
+  "version": "1.0.0",
+  "description": "0x14. JavaScript - Web scraping Scripting API JavaScript  By: Guillaume, CTO at Holberton School  Weight: 1  Project will start Oct 24, 2023 6:00 AM, must end by Oct 25, 2023 6:00 AM  Checker was released at Oct 24, 2023 12:00 PM  An auto review will be launched at the deadline",
+  "main": "0-readme.js",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
